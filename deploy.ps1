@@ -19,3 +19,4 @@ Invoke-Command -Session $session -Command { Expand-Archive $using:destinationZip
 Invoke-Command -Session $session -Command { Remove-Item $Using:destinationZip -Force -Recurse }
 
 Remove-Item -Path $originZip
+Remove-PSSession $session
