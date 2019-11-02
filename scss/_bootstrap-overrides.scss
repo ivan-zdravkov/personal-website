@@ -1,0 +1,87 @@
+// Bootstrap overrides for this template
+a {
+  color: $primary;
+  &:focus,
+  &:hover,
+  &:active {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn {
+  border-width: 2px;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+a.bg-primary:focus, 
+a.bg-primary:hover, 
+button.bg-primary:focus, 
+button.bg-primary:hover {
+  background-color: darken($primary, 10%) !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.bg-ternary { 
+  background-color: $ternary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($primary, 10%) !important;
+    border-color: darken($primary, 10%) !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
+.lead {
+  color: $secondary;
+}
+
+.list-inline-item {
+  margin: 0.20rem;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.20rem;
+}
+
+ul[role=alert] {
+  padding-left: 0;
+  color: darken($primary, 20%);
+}
+
+.badge-primary {
+  background-color: $primary;
+}

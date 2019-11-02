@@ -1,0 +1,288 @@
+// Typography
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+// Custom Horizontal Rule with Star Icon
+hr.rich-light,
+hr.rich-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.rich-light:after,
+hr.rich-dark:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+hr.rich-light {
+  border-color: $white;
+}
+hr.rich-light:after {
+  color: $white;
+  background-color: $primary;
+}
+
+hr.rich-dark {
+  border-color: $secondary;
+}
+hr.rich-dark:after {
+  color: $secondary;
+  background-color: $white;
+}
+
+hr.rich-dark.ternary:after {
+  background-color: $ternary;
+}
+
+hr.rich-light.star:after,
+hr.rich-dark.star:after {
+  content: '\f005';
+}
+
+hr.rich-light.user:after,
+hr.rich-dark.user:after {
+  content: '\f007';
+}
+
+hr.rich-light.cog:after,
+hr.rich-dark.cog:after {
+  content: '\f013';
+}
+
+hr.rich-light.work:after,
+hr.rich-dark.work:after {
+  content: '\f0b1';
+}
+
+hr.rich-light.medal:after,
+hr.rich-dark.medal:after {
+  content: '\f5a2';
+}
+
+hr.rich-light.education:after,
+hr.rich-dark.education:after {
+  content: '\f19d';
+}
+
+hr.rich-light.info:after,
+hr.rich-dark.info:after {
+  content: '\f05a';
+}
+
+hr.rich-light.envelope:after,
+hr.rich-dark.envelope:after {
+  content: '\f0e0';
+}
+
+hr.rich-light.code:after,
+hr.rich-dark.code:after {
+  content: '\f121';
+}
+
+hr.rich-light.resume:after,
+hr.rich-dark.resume:after {
+  content: '\f15c';
+}
+
+hr.rich-light.ninja:after,
+hr.rich-dark.ninja:after {
+  content: '\f504';
+}
+
+hr.rich-light.id:after,
+hr.rich-dark.id:after {
+  content: '\f2c2';
+}
+
+// Section Padding Settings
+section {
+  padding: 6rem 0;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+// Custom Button Size
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+// Custom Rounded Social Button
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+// Scroll to Top Button
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: fade-out($gray-900, 0.5);
+    line-height: 3.1rem;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: $primary + 75%;
+}
+
+::selection {
+  background: $primary + 75%;
+}
+
+.border-none {
+  border: none;
+}
+
+.carousel.dark .flickity-button {
+  background: $primary;
+  opacity: 0.75;
+}
+
+.carousel.dark .flickity-button:hover {
+  opacity: 1;
+}
+
+.carousel.dark .flickity-button-icon {
+  fill: $white;
+}
+
+.carousel.dark .flickity-button:disabled {
+  background: $gray-200;
+  opacity: 0.5;
+}
+
+.carousel.dark .flickity-button:disabled .flickity-button-icon {
+  fill: $black;
+  opacity: 0.5;
+}
+
+.small-hide {
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }  
+}
+
+.wow {
+  padding: 0.4rem;
+}
+
+.wow svg {
+  fill: white;
+}
+
+.wow:hover svg {
+  fill: $secondary;
+}
+
+.battle-net {
+  padding: 0.4rem !important;
+}
+
+.battle-net:hover svg path{
+  fill: $secondary;
+}
+
+.mfp-content > .portfolio-modal {
+  padding: 1.0rem !important;
+  @media (min-width: 768px) {
+    padding: 3rem !important;
+    padding-left: 30 !important;
+    padding-right: 30 !important;
+  }
+  .project-image {
+    display: block;
+  }
+  .project-close {
+    display: inline-block;
+  }
+  @media (min-width: 768px) {
+    .project-body {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+    }
+  }
+}
+
+.portfolio-modal.mfp-hide {
+  display: block!important;
+}
+
+.project-image,
+.project-close {
+  display: none;
+}
+.project-body {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+.resume-container {
+  overflow: hidden;
+  max-height: 650px;
+}
+
+.expanded {
+  max-height: 10000px;
+}
+
+#CybotCookiebotDialogBodyButtonAccept {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+#CybotCookiebotDialog,
+#CybotCookiebotDialogBodyContentTitle {
+  color: $secondary !important;
+}
+
+#CybotCookiebotDialogPoweredbyImage {
+  display: none;
+}
+
+#CybotCookiebotDialog {
+  background-color: $ternary !important;
+}

@@ -1,0 +1,27 @@
+.skills {
+    .carousel {
+        margin-top: 4.5rem;
+        img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .linkedin {
+            font-size: 1.5em;
+            color: #0475AF;
+        }
+    }
+}
+
+.skill-footer {
+    background-color: $primary;
+    width: 100px;
+    height: 100px;
+    bottom: -50px;
+    left: calc(50% - 50px);
+    border-radius: 50%;
+    i {
+        margin-top: 25%;
+        margin-left: 20%;
+    }
+}
