@@ -4,7 +4,7 @@ $zip = "deploy.zip"
 $origin = Get-Location
 $originZip = "$origin\$zip"
 $destination = "C:\www"
-$destinationDir = "$destination\ivan"
+$destinationDir = "$destination\(Get-Item .\deploy.bat).Directory.Name"
 $destinationZip = "$destination\$zip"
 
 Compress-Archive -Path $origin -DestinationPath $originZip
