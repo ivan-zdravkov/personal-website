@@ -1,6 +1,6 @@
 function loadWebsite() {
     let urlParams = new URLSearchParams(location.search);
-    let project = urlParams.get('project');
+    let project = urlParams.get('p');
 
     if (project)
         $(`a[href='#${project}']`).click();
