@@ -13,7 +13,7 @@
         "X-Mailer: PHP/" . phpversion();
 
     $subjectIvan = $name . " sent you a message via your contact form.";
-    $subjectSender = "You successfull sent a message to Ivan Zdravkov";
+    $subjectSender = "You successfully sent a message to Ivan Zdravkov";
     
     mail($to, $subjectIvan, $message, $headersIvan);
     mail($from, $subjectSender, $message, $headersSender);
