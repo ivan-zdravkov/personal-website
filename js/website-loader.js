@@ -2,11 +2,13 @@ function loadWebsite() {
     let urlParams = new URLSearchParams(location.search);
     let project = urlParams.get('p');
     
-    project = project.replace('/', '');
-
-    if (project)
-        $(`a[href='#${project}']`).click();
-
+    if (project) {
+        project = project.replace('/', '');
+    
+        if (project)
+            $(`a[href='#${project}']`).click();
+    }
+    
     clearUrl();
 }
 
