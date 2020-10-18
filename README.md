@@ -1,6 +1,6 @@
 # Ivan's Personal Website
 
-[Ivan's Personal Website](https://zdravkov.eu)
+[Ivan's Personal Website](https://zdravkov.dev)
 
 # [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
 

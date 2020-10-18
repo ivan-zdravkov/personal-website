@@ -1,5 +1,5 @@
 <?php 
-    $to = "ivan@zdravkov.eu";
+    $to = "ivan@zdravkov.dev";
     $from = isset($_POST['email']) ? $_POST['email'] : null;
     $name = isset($_POST['name']) ? $_POST['name'] : null;
     $message = isset($_POST['message']) ? $_POST['message'] : null;
