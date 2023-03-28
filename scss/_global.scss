@@ -72,6 +72,36 @@ hr.rich-dark.cog:after {
   content: '\f013';
 }
 
+hr.rich-light.users-cog:after,
+hr.rich-dark.users-cog:after {
+  content: '\f509';
+}
+
+hr.rich-light.users:after,
+hr.rich-dark.users:after {
+  content: '\f0c0';
+}
+
+hr.rich-light.communication:after,
+hr.rich-dark.communication:after {
+  content: '\f086';
+}
+
+hr.rich-light.tasks:after,
+hr.rich-dark.tasks:after {
+  content: '\f0ae';
+}
+
+hr.rich-light.exclamation-circle:after,
+hr.rich-dark.exclamation-circle:after {
+  content: '\f06a';
+}
+
+hr.rich-light.check-circle:after,
+hr.rich-dark.check-circle:after {
+  content: '\f058';
+}
+
 hr.rich-light.work:after,
 hr.rich-dark.work:after {
   content: '\f0b1';
@@ -162,6 +192,15 @@ section {
 
 li {
   list-style-type: none;
+}
+
+li.colored::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $primary;
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 ::-moz-selection { /* Code for Firefox */
