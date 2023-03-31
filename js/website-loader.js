@@ -9,16 +9,6 @@ function loadWebsite() {
         if (project)
             $(`a[href='#${project}']`).click();
     }
-
-    if (leadership !== 'show') {
-        $(`a[href='#leadership']`).show();
-        $(`section[id='leadership']`).show();
-        $(`a[href='#leadership']`).click();
-    }
-    else {
-        $(`a[href='#leadership']`).hide();
-        $(`section[id='leadership']`).hide();
-    }
     
     clearUrl();
 }
