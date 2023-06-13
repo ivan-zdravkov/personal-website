@@ -21,7 +21,7 @@ $('#downloadPDFButton').click(function () {
 			doc.deletePage(1);
 			doc.addPage(millimeters.width, millimeters.height);
 			doc.addImage(img, 'PNG', 0, 0, millimeters.width, millimeters.height, undefined, 'FAST');
-			doc.save('ivan-zdravkov-resume.pdf');
+			doc.save(`ivan-zdravkov-resume-${new Date().toISOString().split('T')[0]}.pdf`);
 
 			setTimeout(function() { 
 				button.removeAttribute('disabled');
